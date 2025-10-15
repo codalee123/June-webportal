@@ -1,9 +1,10 @@
 // import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import JuneLogo from '../assets/Images/June-Logo.svg'
 import ArrowIcon from '../assets/Icons/Arrow-black.svg'
 
 const Navbar = () => {
-  // const [active, setActive] = useState("Solution")
+  const NavNames = ["Home", "Solution", "Company", "Contact"];
   return (
     <div>
       <nav className='flex justify-between items-center bg-[rgba(0,0,0,1)] w-full h-[96px] px-[4rem] fixed z-50'>
@@ -11,10 +12,26 @@ const Navbar = () => {
           <img src={JuneLogo} alt="" className="w-[120px] h-[76]  relative"/>
           </div>
 
-          <ul className="flex justify-center gap-[48px] text-white text-[15.25px] leading-[28px]">
-            <li>Solution</li>
-            <li>Company</li>
-            <li>Contact</li>
+          <ul className="flex justify-center gap-[38px] text-white text-[15.25px] leading-[28px]">
+            {NavNames.map((name)=>{
+          const path = name === "Home" ? "/" : `/${name.toLowerCase()}`;
+          return (
+            <li key={name}>
+              <NavLink 
+                to={path}
+                className={({ isActive }) =>
+                  `pb-[3px] border-b-2 transition-all duration-200 ${
+                    isActive
+                      ? "border-blue-100 "
+                      : "border-transparent "
+                  }`
+                }
+              >
+                {name}
+              </NavLink>
+            </li>
+          );
+        })}
           </ul>
 
           <div className="text-[rgba(32,17,60,1)] bg-[rgba(255,255,255,1)]  cursor-pointer rounded-[12px] outline-0 h-[55px] w-[179.6px] text-[16px] font-medium flex justify-center items-center gap-5">

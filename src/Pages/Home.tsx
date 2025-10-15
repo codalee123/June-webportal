@@ -1,13 +1,13 @@
-import HeroImage from './assets/Images/hero-image.svg'
-import SolarIMage from './assets/Images/Solar-image.svg'
-import VisionImage from './assets/Images/Our-vision-Image.svg'
-import JetImage from './assets/Images/Jet-Image.svg'
-import HomeImage from './assets/Images/House-Illustration.svg'
-import EnterpriseImage from './assets/Images/Enterprises-image.svg'
-import SolutionImage from './assets/Images/Our-Solution-Image.svg'
-import LearnMore from './assets/Icons/learnmore-logo.svg'
-import ArrowIcon from './assets/Icons/Arrow-white.svg'
-import VectorLogo from './assets/Images/vector-logo.svg'
+import HeroImage from '../assets/Images/hero-image.svg'
+import SolarIMage from '../assets/Images/Solar-image.svg'
+import VisionImage from '../assets/Images/Our-vision-Image.svg'
+import JetImage from '../assets/Images/Jet-Image.svg'
+import HomeImage from '../assets/Images/House-Illustration.svg'
+import EnterpriseImage from '../assets/Images/Enterprises-image.svg'
+import SolutionImage from '../assets/Images/Our-Solution-Image.svg'
+import LearnMore from '../assets/Icons/learnmore-logo.svg'
+import ArrowIcon from '../assets/Icons/Arrow-white.svg'
+import VectorLogo from '../assets/Images/vector-logo.svg'
 
 
 const Home = () => {
