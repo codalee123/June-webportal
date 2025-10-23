@@ -48,52 +48,52 @@ const Home = () => {
 
   return (
     <div> 
-          <div className='w-full h-[650px] bg-[rgba(0,0,0,1)] flex items-center relative px-[5rem] '> 
-              <div className=' w-[655px] '> 
-                  <h1 className='text-[73px] font-bold text-[rgba(255,255,255,1)] leading-[110.00000000000001%]'> 
+          <div className='w-full h-[650px] bg-[rgba(0,0,0,1)] flex items-center relative px-4 lg:px-[5rem] '> 
+              <div className='w-max lg:w-[655px] mt-[-13rem] lg:mt-0'> 
+                  <h1 className='text-[30px] md:text-[45px] lg:text-[73px] lg:leading-[110%] font-bold text-[rgba(255,255,255,1)] leading-[50px]'> 
                     The digital backbone for Africa’s businesses. 
                   </h1> 
                   <p className='text-[rgba(255,255,255,1)] font-[400px] text-[14px] leading-6 pt-3'>
                     Powering innovation, resilience, and growth across the continent’s most vital sectors
                   </p> 
               </div> 
-              <div className=' max-w-[450px] absolute left-[755px] top-[80px]' >
-                  <img src={HeroImage} alt="" />
+              <div className='max-w-[280px] left-8 top-[20rem] md:left-36 lg:max-w-[450px] absolute lg:left-[755px] lg:top-[80px]' >
+                  <img src={HeroImage} alt=""  />
               </div> 
           </div> 
             
           {/* WHY- SECTION */}
 
-          <div className='h-[640px] bg-[rgba(255,255,255,1)] flex items-center justify-center flex-col pt-[3rem]'> 
-                <div className='h-[150px] w-[800px] bg-[rgba(0,0,0,1)] rounded-[36px] overflow-hidden flex items-center'>
-                  <img src={SolarIMage} alt="" className='W-[350] h-full object-cover' />
-                    <div className='text-center w-full' >
-                      <h1 className='text-[40px] font-semibold text-[rgba(255,255,255,1)] '>
+          <div className='h-max lg:h-[640px] bg-[rgba(255,255,255,1)] flex items-center justify-center flex-col pt-[3rem]'> 
+                <div className='h-[150px] w-max lg:w-[800px] bg-[rgba(0,0,0,1)] rounded-[36px] overflow-hidden flex flex-col lg:flex-row items-center gap-4 lg:gap-0'>
+                  <img src={SolarIMage} alt="" className='w-[350px] h-[80px] lg:w-[350px] lg:h-full object-cover' />
+                    <div className='text-center w-full pt-0 lg:p-6' >
+                      <h1 className='text-[25px] lg:text-[40px] font-semibold text-[rgba(255,255,255,1)] '>
                           Why June Infrastructure?  
                       </h1>
                     </div>
                 </div>
 
-                <div className='w-[920px] py-[2em]'>
-                  <h1 className='text-[30px] leading-[50px] py-2 font-medium text-center'>
+                <div className='w-full lg:w-[920px] py-[2em]'>
+                  <h1 className='text-[18px] px-3.5 lg:px-0 lg:text-[30px] lg:leading-[50px] py-[1em] font-medium text-center'>
                     At June, we don’t just build digital solutions , we build the backbone that Africa’s industries rely on. Our secure, scalable, and connected systems are designed to handle the complexity of critical sectors, ensuring resilience today and readiness for tomorrow. 
                   </h1>
-                  <p className='text-center font-normal text-[29px]'>
+                  <p className='text-center font-normal px-2.5 lg:px-0 text-[16.5px] lg:text-[29px]'>
                     With June, you gain more than technology , you gain a partner committed to powering transformation across the continent. 
                   </p>
                 </div> 
           </div> 
                   
           {/* OUR-VISION */}
-          <div className='
-            h-[500px] bg-[rgba(0,0,0,1)] flex items-center justify-cente pt-[4em] pl-[8em] gap-[4rem] flex-wrap'>
-            <div className='w-[450px] h-full '>
+          <div id="company" className='
+            h-full lg:h-[500px] bg-[rgba(0,0,0,1)] flex items-center justify-center pt-[4em] lg:pl-[8em] gap-[4rem] flex-wrap'>
+            <div className='w-[350px] lg:w-[450px] h-full '>
               <img src={VisionImage} alt="" className=' h-full object-cover' />
             </div>
              
             <div>
               {Content.map((item, index) => ( 
-              <div key={index} className="space-y-2 text-[rgba(255,255,255,1)] font-semibold w-[610px] pb-4">
+              <div key={index} className="space-y-2 text-[rgba(255,255,255,1)] font-semibold w-full md:w-full md:text-[20px] lg:w-[610px] px-6 lg:p-0 pb-4">
                 <h3 className="text-[15px] tracking-widest font-medium ">
                   {item.title}
                 </h3> 
@@ -107,24 +107,24 @@ const Home = () => {
 
 
            {/* BUSINESS-SECTION */}
-            <section className='h-[660px] bg-[rgba(255,255,255,1)] flex flex-col pt-[4rem] pl-[6rem] '>
-               <div className='w-[650px]'>
-                 <h3 className='text-[58px] leading-[75px] font-medium'>
+            <section className='h-[660px] md:h-max md:pb-12 bg-[rgba(255,255,255,1)] flex flex-col pt-[4rem] pl-[1rem] lg:pl-[6rem] mb-[35rem] lg:mb-0'>
+               <div className='w-full lg:w-[645px]'>
+                 <h3 className='text-[30px] lg:text-[57px] lg:leading-[75px] font-medium'>
                    Building For Businesses At Every Stage
                  </h3>
-                 <p className='text-[18px] w-[550px]'>
+                 <p className='text-[17px] w-full lg:w-[535px] '>
                    From idea to scale, June gives you the infrastructure to launch fast, grow securely, and expand confidently.
                  </p>
                </div>
 
-                <div className="max-w-6xl mt-12 grid md:grid-cols-3 gap-2">
+                <div className="w-full lg:max-w-6xl mt-12 flex flex-col md:flex-row md:flex-wrap lg:flex-row gap-10 items-center justify-center">
                   {data.map((item, index) => (
                     <div key={index} className="
-                      rounded-[26px] shadow-sm hover:shadow-lg transition-all duration-300 w-[348px] h-[270px] flex flex-col overflow-hidden pt-[1.5em] pl-[1.5em] bg-[rgba(249,244,255,1)] " >  
-                      <h3 className="text-[23px] font-semibold text-[rgba(13,13,13,1)] mb-3 text-start " >
+                      rounded-[26px] shadow-sm hover:shadow-lg transition-all duration-300 w-[338px] h-[270px] flex flex-col overflow-hidden py-[1.5em] pl-[1em] bg-[rgba(249,244,255,1)]" >  
+                      <h3 className="text-[23px] font-semibold text-[rgba(13,13,13,1)] text-start" >
                         {item.title} 
                       </h3>
-                      <img src={item.image} alt={item.title} className="w-30 h-30 object-contain mb-5 mx-auto" />
+                      <img src={item.image} alt={item.title} className="w-35 h-38  ml-[5em]" />
                       <p className="text-[rgba(13,13,13,1)] text-[11px] leading-relaxed w-[300px]">
                         {item.description}
                       </p>
@@ -135,7 +135,7 @@ const Home = () => {
            
            {/* OUR-SECTION */}
            
-            <article className='h-[620px] flex flex-col py-[3rem] justify-center items-center '>
+            <article id="solution" className='h-max lg:h-[620px] md:mt-[-35rem] flex flex-col py-[3rem] justify-center items-center mb-[15rem] lg:mb-0 lg:mt-8'>
               <div className='text-center'>
                 <h3 className='text-[40px] font-semibold '>
                   Our Solution
@@ -145,22 +145,22 @@ const Home = () => {
                 </p>
               </div>
 
-              <div className=' w-[1000px] h-[350px] mt-8 flex gap-6 '>
-                <div className='w-[485px] h-full py-5 px-8 '>
-                   <h2 className='text-[36px] font-semibold'>
+              <div className='w-full lg:w-[1000px] h-[350px] mt-8 flex lg:gap-6 flex-col lg:flex-row '>
+                <div className='w-full lg:w-[485px] h-full py-5 px-8 '>
+                   <h2 className='text-[30px] lg:text-[36px] font-semibold'>
                      SKYGRIT 
                    </h2>
                    
-                   <h3 className='text-[36px] font-semibold leading-[45px]'>
+                   <h3 className='text-[30px] lg:text-[36px] font-semibold lg:leading-[45px]'>
                      Revolutionizing Post-Booking Airline Customer Experience in Nigeria and Africa 
                    </h3> 
                    
-                   <p className='text-[14px]'>
+                   <p className='text-[15px]'>
                      Skygrit enables airlines to manage cancellations, rerouting, refunds and passenger alerts with full automation, delivering a seamless post-booking experience. 
                    </p> 
                 </div>
                  
-                 <div className=' w-[500px] rounded-4xl overflow-hidden relative flex justify-center items-center ' > 
+                 <div className='w-[300px] mt-10 md:w-[450px] md:mt-6 lg:w-[500px] relative flex justify-center mx-auto lg:mx-0 items-center' > 
                     <div className='
                       absolute h-[70px] w-[235px] bg-[rgba(32,17,60,0.56)] cursor-pointer rounded-[100px] flex items-center pl-6 gap-5'>
                       <span>
@@ -170,7 +170,7 @@ const Home = () => {
                         Learn More 
                       </span>
                     </div>
-                    <img src={SolutionImage} alt="" className='w-full h-full object-cover ' />
+                    <img src={SolutionImage} alt="" className='ml-2.5 w-full h-full object-cover rounded-2xl' />
                  </div>
               </div>
                  
@@ -180,7 +180,7 @@ const Home = () => {
            <figure className='w-full bg-[rgba(10,11,13,1)] flex justify-center relative overflow-hidden '>
              <div className='py-[4em]' >
                <h2 className=
-                'text-[40px] font-semibold text-[rgba(255,255,255,1)] w-[800px] leading-[60px] pb-[20px] '>
+                'text-[25px] font-semibold text-[rgba(255,255,255,1)] w-[300px] md:w-[600px] md:text-[50px] lg:leading-[60px] pb-[20px] leading-[40px] '>
                  Let’s revolutionize your digital infrastructure. 
                </h2> 
                <div className="
