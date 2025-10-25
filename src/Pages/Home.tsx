@@ -74,7 +74,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className='w-full lg:w-[920px] py-[2em]'>
+                <div className='w-full  lg:w-[920px] py-[2em]'>
                   <h1 className='text-[18px] px-3.5 lg:px-0 lg:text-[30px] lg:leading-[50px] py-[1em] font-medium text-center'>
                     At June, we don’t just build digital solutions , we build the backbone that Africa’s industries rely on. Our secure, scalable, and connected systems are designed to handle the complexity of critical sectors, ensuring resilience today and readiness for tomorrow. 
                   </h1>
@@ -86,9 +86,9 @@ const Home = () => {
                   
           {/* OUR-VISION */}
           <div id="company" className='
-            h-full lg:h-[500px] bg-[rgba(0,0,0,1)] flex items-center justify-center pt-[4em] lg:pl-[8em] gap-[4rem] flex-wrap'>
-            <div className='w-[350px] lg:w-[450px] h-full '>
-              <img src={VisionImage} alt="" className=' h-full object-cover' />
+            h-full lg:h-[500px] bg-[rgba(0,0,0,1)] flex items-center justify-center py-[3em] lg:pb-0 lg:pt-[4em] lg:pl-[8em] gap-[4rem] flex-wrap'>
+            <div className='w-[320px] lg:w-[450px] h-full '>
+              <img src={VisionImage} alt="" className=' h-[100%px] object-contain lg:h-full lg:object-cover' />
             </div>
              
             <div>
