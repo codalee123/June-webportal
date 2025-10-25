@@ -7,12 +7,12 @@ import InstagramLogo from '../assets/Icons/instagram-logo.svg'
 import LinkedinLogo from '../assets/Icons/linkedin-logo.svg'
 const Footer = () => {
 
-  const Logos = [
-                {icon: FacebookLogo},
-                {icon: TwitterLogo},
-                {icon: InstagramLogo},
-                {icon: LinkedinLogo}
-              ]
+  // const Logos = [
+  //               {icon: FacebookLogo},
+  //               {icon: TwitterLogo},
+  //               {icon: InstagramLogo},
+  //               {icon: LinkedinLogo}
+  //             ]
   return (
     <section id="contact" className=':h-[250px] bg-[rgba(255,255,255,1)] flex justify-center py-[3em] pb-[5rem] lg:py-[5em] md:pt-8'>
       <footer className='flex justify-between w-[1050px] flex-col gap-6 px-6 md:flex-row lg:flex-row lg:gap-0 lg:px-0'>
@@ -20,11 +20,11 @@ const Footer = () => {
           <img src={JuneLogo} alt="" className='w-[95px] cursor-pointer' />
         </div>
 
-        <div className='text-[16px] leading-[28px] flex gap-3 '>
-          <span className='text-[15.8px] text-[rgba(32,17,60,1)] cursor-pointer '>
+        <div className='text-[16px] leading-[28px] flex gap-3  h-max '>
+          <span className='text-[15.8px] text-[rgba(32,17,60,1)] cursor-pointer hover:text-[rgba(108,42,239,1)] '>
             Privacy Policy
           </span>
-          <span className='cursor-pointer'>
+          <span className='cursor-pointer hover:text-[rgba(108,42,239,1)]'>
             Terms & Conditions
           </span>
         </div>
@@ -46,12 +46,19 @@ const Footer = () => {
             </span>
           </div>
 
-          <div className='flex gap-3'>
-            {Logos.map((logo, index)=>(
-              <span key={index} className=' w-[50px] h-[24px] flex justify-center cursor-pointer'>
-                <img src={logo.icon} alt="" />
-              </span>
-            ))}
+          <div className='flex gap-3 '>
+            <a  className=' w-[50px] h-[24px] flex justify-center cursor-pointer'>
+              <img src={FacebookLogo} alt="" />
+            </a>
+            <a  className=' w-[50px] h-[24px] flex justify-center cursor-pointer'>
+              <img src={TwitterLogo} alt="" />
+            </a>
+            <a  className=' w-[50px] h-[24px] flex justify-center cursor-pointer'>
+              <img src={InstagramLogo} alt="" />
+            </a>
+            <a href='https://www.linkedin.com/company/juneinfra/' className=' w-[50px] h-[24px] flex justify-center cursor-pointer'>
+              <img src={LinkedinLogo} alt="" />
+            </a>
           </div>
         </div>
       </footer>
