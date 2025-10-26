@@ -17,7 +17,7 @@ const Footer = () => {
     <section id="contact" className=':h-[250px] bg-[rgba(255,255,255,1)] flex justify-center py-[3em] pb-[5rem] lg:py-[5em] md:pt-8'>
       <footer className='flex justify-between w-[1050px] flex-col gap-6 px-6 md:flex-row lg:flex-row lg:gap-0 lg:px-0'>
         <div className=''>
-          <img src={JuneLogo} alt="" className='w-[95px] cursor-pointer' />
+          <img src={JuneLogo} alt="" className='w-[85px] lg:w-[95px] cursor-pointer md:w-[75px]' />
         </div>
 
         <div className='text-[16px] leading-[28px] flex gap-3  h-max '>
@@ -33,12 +33,12 @@ const Footer = () => {
           <div>
             <h2 className='text-[22.5px] text-[rgba(120,60,244,1)] leading-[28px]'>Subscribe to our Newsletter</h2>
           </div>
-          <div className='flex justify-between lg:gap-3 my-5 border-b-1 border-[rgba(156,163,175,1)] pb-3 px-1' >
+          <div className='flex justify-between gap-1 lg:gap-3 my-5 border-b-1 border-[rgba(156,163,175,1)] pb-3 px-1' >
             <span>
               <img src={Email} alt="" className='cursor-pointer' />
             </span>
             <span>
-              <input type="text" placeholder='Type your e-mail' className='w-[250px] text-[12.91px] placeholder-[rgba(156,163,175,1)] placeholder:text-[12.91px] leading-[100%]  pb-1 pt-[0.5px] outline-0 border-0 lg:w-[200px]'   />
+              <input type="text" placeholder='Type your e-mail' className='w-[250px] md:w-[200px] text-[12.91px] placeholder-[rgba(156,163,175,1)] placeholder:text-[12.91px] leading-[100%]  pb-1 pt-[0.5px] outline-0 border-0 lg:w-[200px]'   />
             </span>
 
             <span>

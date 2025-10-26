@@ -48,8 +48,8 @@ const Home = () => {
 
   return (
     <div> 
-          <div className='w-full h-[650px] bg-[rgba(0,0,0,1)] flex items-center relative px-4 lg:px-[5rem] '> 
-              <div className='w-max lg:w-[655px] mt-[-13rem] lg:mt-0'> 
+          <div className='w-full h-[620px] gap-[1em] lg:pt-[3em] bg-[rgba(0,0,0,1)] flex items-center lg:gap-[2em]  px-[2em] lg:px-[5rem] flex-wrap '> 
+              <div className='w-max lg:w-[655px] mt-[7rem] lg:mt-0'> 
                   <h1 className='text-[30px] md:text-[45px] lg:text-[73px] lg:leading-[110%] font-bold text-[rgba(255,255,255,1)] leading-[50px]'> 
                     The digital backbone for Africa’s businesses. 
                   </h1> 
@@ -57,7 +57,7 @@ const Home = () => {
                     Powering innovation, resilience, and growth across the continent’s most vital sectors
                   </p> 
               </div> 
-              <div className='max-w-[280px] left-8 top-[20rem] md:left-36 lg:max-w-[450px] absolute lg:left-[755px] lg:top-[80px]' >
+              <div className='max-w-[270px] mx-auto md:max-w-[320px] md:mx-auto md:pb-4  lg:max-w-[450px] pb-[4em]' >
                   <img src={HeroImage} alt=""  />
               </div> 
           </div> 
@@ -65,8 +65,8 @@ const Home = () => {
           {/* WHY- SECTION */}
 
           <div className='h-max lg:h-[640px] bg-[rgba(255,255,255,1)] flex items-center justify-center flex-col pt-[3rem]'> 
-                <div className='h-[150px] w-max lg:w-[800px] bg-[rgba(0,0,0,1)] rounded-[36px] overflow-hidden flex flex-col lg:flex-row items-center gap-4 lg:gap-0'>
-                  <img src={SolarIMage} alt="" className='w-[350px] h-[80px] lg:w-[350px] lg:h-full object-cover' />
+                <div className='h-[150px] w-max md:h-[100px] lg:h-[150px]  lg:w-[800px] bg-[rgba(0,0,0,1)] rounded-[36px] overflow-hidden flex flex-col md:flex-row md:gap-0 lg:flex-row items-center gap-4 lg:gap-0'>
+                  <img src={SolarIMage} alt="" className='w-[350px] h-[80px] md:h-full lg:w-[350px] lg:h-full object-cover' />
                     <div className='text-center w-full pt-0 lg:p-6' >
                       <h1 className='text-[25px] lg:text-[40px] font-semibold text-[rgba(255,255,255,1)] '>
                           Why June Infrastructure?  
@@ -86,8 +86,8 @@ const Home = () => {
                   
           {/* OUR-VISION */}
           <div id="company" className='
-            h-full lg:h-[500px] bg-[rgba(0,0,0,1)] flex items-center justify-center py-[3em] lg:pb-0 lg:pt-[4em] lg:pl-[8em] gap-[4rem] flex-wrap'>
-            <div className='w-[320px] lg:w-[450px] h-full '>
+            h-full lg:h-[500px] bg-[rgba(0,0,0,1)] flex items-center justify-center py-[3em] lg:pb-0 lg:pt-[4em] lg:pl-[5em] gap-[4rem] flex-wrap'>
+            <div className='w-[320px] lg:w-[460px] md:w-[400px] h-full '>
               <img src={VisionImage} alt="" className=' h-[100%px] object-contain lg:h-full lg:object-cover' />
             </div>
              
@@ -107,7 +107,7 @@ const Home = () => {
 
 
            {/* BUSINESS-SECTION */}
-            <section className='h-[660px] md:h-max md:pb-12 bg-[rgba(255,255,255,1)] flex flex-col pt-[4rem] pl-[1rem] lg:pl-[6rem] mb-[35rem] lg:mb-0'>
+            <section className='h-[660px] md:h-max md:pb-12 bg-[rgba(255,255,255,1)] flex flex-col py-[4rem] pl-[1rem] lg:pl-[6rem] mb-[35rem] lg:mb-0'>
                <div className='w-full lg:w-[645px]'>
                  <h3 className='text-[30px] lg:text-[57px] lg:leading-[75px] font-medium'>
                    Building For Businesses At Every Stage
@@ -117,7 +117,7 @@ const Home = () => {
                  </p>
                </div>
 
-                <div className="w-full lg:max-w-6xl mt-12 flex flex-col md:flex-row md:flex-wrap lg:flex-row gap-10 items-center justify-center">
+                <div className="w-full lg:max-w-6xl mt-12 flex flex-col md:flex-row md:flex-wrap lg:flex-row gap-[3em] items-center justify-center">
                   {data.map((item, index) => (
                     <div key={index} className="
                       rounded-[26px] shadow-sm hover:shadow-lg transition-all duration-300 w-[338px] h-[270px] flex flex-col overflow-hidden py-[1.5em] pl-[1em] bg-[rgba(249,244,255,1)]" >  
@@ -135,7 +135,7 @@ const Home = () => {
            
            {/* OUR-SECTION */}
            
-            <article id="solution" className='h-max lg:h-[620px] md:mt-[-35rem] flex flex-col py-[3rem] justify-center items-center mb-[15rem] lg:mb-0 lg:mt-8'>
+            <article id="solution" className='h-max md:h-[750px] lg:h-[700px] md:mt-[-35rem] flex flex-col py-[3rem] justify-center items-center mb-[15rem] lg:my-0 lg:pb-[8em]'>
               <div className='text-center'>
                 <h3 className='text-[40px] font-semibold '>
                   Our Solution
@@ -145,13 +145,13 @@ const Home = () => {
                 </p>
               </div>
 
-              <div className='w-full lg:w-[1000px] h-[350px] mt-8 flex lg:gap-6 flex-col lg:flex-row '>
-                <div className='w-full lg:w-[485px] h-full py-5 px-8 '>
+              <div className='w-full lg:w-[1000px] h-[350px] mt-8 md:mt-2 flex lg:gap-6 flex-col lg:flex-row '>
+                <div className='w-full lg:w-[520px] h-full py-5 px-8 md:px-[3.5em] '>
                    <h2 className='text-[30px] lg:text-[36px] font-semibold'>
                      SKYGRIT 
                    </h2>
                    
-                   <h3 className='text-[30px] lg:text-[36px] font-semibold lg:leading-[45px]'>
+                   <h3 className='text-[30px] lg:text-[36px] font-semibold lg:leading-[45px] '>
                      Revolutionizing Post-Booking Airline Customer Experience in Nigeria and Africa 
                    </h3> 
                    
@@ -160,7 +160,7 @@ const Home = () => {
                    </p> 
                 </div>
                  
-                 <div className='w-[300px] mt-10 md:w-[450px] md:mt-6 lg:w-[500px] relative flex justify-center mx-auto lg:mx-0 items-center' > 
+                 <div className='w-[350px] mt-5 md:w-[550px] md:mt-6 lg:w-[500px] relative flex justify-center mx-auto lg:mx-0 items-center' > 
                     <div className='
                       absolute h-[70px] w-[235px] bg-[rgba(32,17,60,0.56)] cursor-pointer rounded-[100px] flex items-center pl-6 gap-5'>
                       <span>
@@ -177,10 +177,10 @@ const Home = () => {
             </article>
             
           {/* REVOLUTION-SECTION */}
-           <figure className='w-full bg-[rgba(10,11,13,1)] flex justify-center relative overflow-hidden '>
-             <div className='py-[4em]' >
+           <figure className='w-full lg:h-[310px] bg-[rgba(10,11,13,1)] flex justify-center relative overflow-hidden '>
+             <div className='py-[3em] lg:mr-[12em]' >
                <h2 className=
-                'text-[25px] font-semibold text-[rgba(255,255,255,1)] w-[300px] md:w-[600px] md:text-[50px] lg:leading-[60px] pb-[20px] leading-[40px] '>
+                'text-[25px] font-semibold text-[rgba(255,255,255,1)] w-[350px] lg:w-[700px] md:w-[600px] md:text-[40px] lg:leading-[60px] pb-[20px] leading-[40px] md:leading-[60px]  '>
                  Let’s revolutionize your digital infrastructure. 
                </h2> 
                <div className="
@@ -193,7 +193,7 @@ const Home = () => {
                </div>
              </div>
 
-             <div className='absolute h-[360px] w-[658px] left-[693px] '>
+             <div className=' h-[360px] w-[660px] absolute z-10 right-0 '>
                <img src={VectorLogo} alt="" className='w-full h-full object-contain ' />
              </div>
           </figure>          
