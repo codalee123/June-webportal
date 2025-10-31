@@ -48,9 +48,9 @@ const Home = () => {
 
   return (
     <div> 
-          <div className='w-full lg:justify-between h-max lg:w-full pb-[2.5rem]  gap-[2em] lg:pt-[5em] bg-[rgba(0,0,0,1)] flex items-center lg:gap-[2em]  px-[2em] lg:px-[5rem] flex-wrap'>
-              <div className='w-max lg:w-[655px] mt-[7rem] lg:mt-[5rem]'> 
-                  <h1 className='text-[30px] md:text-[45px] lg:text-[73px] lg:leading-[110%] font-bold text-[rgba(255,255,255,1)] leading-[50px]'> 
+          <div className='w-full lg:justify-between h-max lg:w-full pb-[2.5rem]  gap-[2em] lg:pt-[5em] bg-[rgba(0,0,0,1)] flex items-center lg:gap-[2em]  px-[2em] lg:px-[5rem] flex-wrap xl:flex-nowrap xl:pb-[5.5rem]'>
+              <div className='w-max lg:w-[655px] mt-[7rem] lg:mt-[5rem] xl:mt-[4rem]'> 
+                  <h1 className='text-[30px] md:text-[45px] lg:text-[73px] lg:leading-[110%] font-bold text-[rgba(255,255,255,1)] leading-[50px] xl:text-[71px]'> 
                     The digital backbone for Africa’s businesses. 
                   </h1> 
                   <p className='text-[rgba(255,255,255,1)] font-[400px] text-[14px] leading-6 pt-3'>
