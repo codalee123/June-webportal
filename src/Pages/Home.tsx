@@ -124,7 +124,7 @@ const Home = () => {
                       <h3 className="text-[23px] 2xl:text-[32px] font-semibold text-[rgba(13,13,13,1)] text-start" >
                         {item.title} 
                       </h3>
-                      <img src={item.image} alt={item.title} className="w-35 h-38  ml-[5em] 2xl:w-58 2xl:h-46  2xl:mt-[1em] 2xl:mb-[1.5em]" />
+                      <img src={item.image} alt={item.title} className="w-38 h-30  ml-[5em] 2xl:w-58 2xl:h-46  2xl:mt-[1em] xl:my-[1em] 2xl:mb-[1.5em]" />
                       <p className="text-[rgba(13,13,13,1)] text-[11px] leading-relaxed w-[300px] 2xl:text-[14.3px]
                       2xl:w-[400px]">
                         {item.description}
