@@ -37,10 +37,10 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <div className="text-[rgba(32,17,60,1)] bg-[rgba(255,255,255,1)]  cursor-pointer rounded-[12px] outline-0 h-[55px] lg:w-[179.6px] text-[13px] p-4 lg:py-0 lg:text-[16px] font-medium flex justify-center items-center gap-0.5 lg:gap-5 2xl:text-[16px] " >
+          <button className="text-[rgba(32,17,60,1)] bg-[rgba(255,255,255,1)]  cursor-pointer rounded-[12px] outline-0 h-[55px] lg:w-[179.6px] text-[13px] p-4 lg:py-0 lg:text-[16px] font-medium flex justify-center items-center gap-0.5 lg:gap-5 2xl:text-[16px] " >
             <span><a href="#contact">Get in Touch</a></span>
             <span><img src={ArrowIcon} alt="" className='' /></span>
-          </div>
+          </button>
 
       </nav>
     </div>
