@@ -51,7 +51,7 @@ const Footer = () => {
             <a  className=' w-[50px] h-[24px] 2xl:h-[30px]  flex justify-center cursor-pointer'>
               <img src={InstagramLogo} alt="" />
             </a>
-            <a href='https://www.linkedin.com/company/juneinfra/' className=' w-[50px] h-[24px] flex justify-center cursor-pointer 2xl:h-[30px] '>
+            <a href='https://www.linkedin.com/company/juneinfra/' target="_blank" rel="noopener noreferrer" className=' w-[50px] h-[24px] flex justify-center cursor-pointer 2xl:h-[30px] '>
               <img src={LinkedinLogo} alt="" />
             </a>
           </div>

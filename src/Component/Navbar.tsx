@@ -26,10 +26,10 @@ const Navbar = () => {
               <li
                 key={item.name}
                 onClick={() => setActive(item.name)}
-                className={`cursor-pointer pb-[1px] transition-all duration-10 ${
+                className={`cursor-pointer pb-[1px] transition-all duration-10  ${
                   active === item.name
                     ? "border-b-2 border-blue-100"
-                    : "border-b-2 border-transparent"
+                    : "border-b-2 border-transparent hover:text-purple-300"
                 }`}
               >
                 <a href={item.href}>{item.name}</a>
@@ -37,10 +37,12 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <button className="text-[rgba(32,17,60,1)] bg-[rgba(255,255,255,1)]  cursor-pointer rounded-[12px] outline-0 h-[55px] lg:w-[179.6px] text-[13px] p-4 lg:py-0 lg:text-[16px] font-medium flex justify-center items-center gap-0.5 lg:gap-5 2xl:text-[16px] " >
-            <span><a href="#contact">Get in Touch</a></span>
+          <a href="#contact">
+            <button className="text-[rgba(32,17,60,1)] bg-[rgba(255,255,255,1)]  cursor-pointer rounded-[12px] outline-0 h-[55px] lg:w-[179.6px] text-[13px] p-4 lg:py-0 lg:text-[16px] font-medium flex justify-center items-center gap-0.5 lg:gap-5 2xl:text-[16px] hover:bg-purple-300 transition " >
+            <span>Get in Touch</span>
             <span><img src={ArrowIcon} alt="" className='' /></span>
           </button>
+          </a>
 
       </nav>
     </div>

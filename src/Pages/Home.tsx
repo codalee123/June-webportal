@@ -49,7 +49,7 @@ const Home = () => {
   return (
     <div className="w-full">
       {/* HERO SECTION */}
-      <div className="w-full h-auto bg-black flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-0 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-30 2xl:px-36 py-8 sm:py-12 md:py-16 lg:py-12 xl:py-8 2xl:py-8">
+      <div className="w-full h-auto bg-black flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-0 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-30 2xl:px-36 py-8 sm:py-12 md:py-16 lg:py-12 xl:py-8 2xl:py-8  ">
         <div className="w-full max-w-[350px] sm:max-w-[450px] md:max-w-[550px] lg:max-w-[600px] xl:max-w-[565px] 2xl:max-w-[850px] mt-20 sm:mt-24 md:mt-28 lg:mt-20 xl:mt-16 2xl:mt-16 ">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[59px] 2xl:text-[89px] font-bold text-white leading-tight lg:leading-[110%]">
             The digital backbone for Africa's businesses.
@@ -105,8 +105,8 @@ const Home = () => {
       </div>
 
       {/* BUSINESS SECTION */}
-      <section className="h-auto bg-white flex flex-col py-12 sm:py-16 md:py-20 lg:py-16 xl:py-20 2xl:py-24 px-4 sm:px-6 md:px-8 lg:pl-16 xl:pl-20 2xl:pl-36">
-        <div className="w-full max-w-[90%] sm:max-w-[500px] md:max-w-[600px] lg:max-w-[645px] xl:max-w-[650px] 2xl:max-w-[850px]">
+      <section className="h-auto bg-white flex flex-col py-12 sm:py-16 md:py-20 lg:py-16 xl:py-20 2xl:py-24 px-4 sm:px-6 md:px-8 lg:pl-16 xl:pl-20 2xl:pl-36 ">
+        <div className="w-full max-w-[90%] sm:max-w-[500px] md:max-w-[600px] lg:max-w-[645px] xl:max-w-[650px] 2xl:max-w-[850px] ">
           <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-[57px] xl:text-6xl 2xl:text-[80px] lg:leading-[75px] 2xl:leading-[6.5rem] font-medium">
             Building For Businesses At Every Stage
           </h3>
@@ -183,9 +183,9 @@ const Home = () => {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[52px] xl:text-[50px] 2xl:text-[70px] font-semibold text-white leading-tight sm:leading-tight md:leading-tight lg:leading-[60px] 2xl:leading-[85px] pb-5 sm:pb-6 md:pb-8 lg:pb-5 ">
             Let's revolutionize your digital infrastructure.
           </h2>
-          <button className="relative bg-[#6c2aef] text-white cursor-pointer rounded-[12px] h-[55px] sm:h-[60px] lg:h-[55px] 2xl:h-[70px] w-[179.6px] sm:w-[190px] lg:w-[179.6px] 2xl:w-[200px] text-base sm:text-lg lg:text-base 2xl:text-xl font-medium flex justify-center items-center gap-5 overflow-hidden transition-all duration-300 ease-out hover:bg-[#5a22c7] before:content-[''] before:absolute before:inset-0 before:bg-[rgba(255,255,255,0.2)] before:translate-x-[-100%] before:transition-transform before:duration-500 before:rounded-[12px] hover:before:translate-x-0">
-            <span className="relative z-10">Get in Touch</span>
-            <span className="relative z-10">
+          <button className=" bg-[#6c2aef] text-white cursor-pointer rounded-[12px] h-[55px] sm:h-[60px] lg:h-[55px] 2xl:h-[70px] w-[179.6px] sm:w-[190px] lg:w-[179.6px] 2xl:w-[200px] text-base sm:text-lg lg:text-base 2xl:text-xl font-medium flex justify-center items-center gap-5 overflow-hidden ">
+            <span>Get in Touch</span>
+            <span>
               <img src={ArrowIcon} alt="" />
             </span>
           </button>
